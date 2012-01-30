@@ -1,0 +1,14 @@
+<?php
+
+/**
+ * @file
+ * Drupal hooks for the commerce_uuid module.
+ */
+
+/**
+ * Implements hook_entity_info_alter().
+ */
+function commerce_uuid_entity_info_alter(&$entity_info) {
+  $entity_info['commerce_product']['entity keys']['uuid'] = 'uuid';
+  $entity_info['commerce_product']['uuid'] = TRUE;
+}
