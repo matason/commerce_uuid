@@ -1,3 +1,4 @@
 name = Commerce UUID
 description = Adds universally unique identifiers support to commerce.
 core = 7.x
+dependencies[] = uuid
